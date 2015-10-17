@@ -1,0 +1,134 @@
+#header {
+	background:white;
+	height:100px;
+	width:100%;
+	border:none;
+
+}
+#header a img {
+	height:70px;
+	position:absolute;
+	left:10%;
+}
+
+#donate {
+	background:red;
+	color:white;
+	border-radius:0;
+	border:none;
+	margin-top:2em;
+	position:absolute;
+	right:10%;
+}
+.jumbotron {
+	background:#71236b;
+	position:relative;
+	padding-top:5em;
+}
+/*TYPOGRAPHY*/
+.jumbotron h1 {
+	font-family: 'Passion One', cursive;
+	color: #00b1a9;
+	text-align:center;
+}
+.jumbotron #tag{
+	text-align:center;
+}
+/*SVG*/
+#svg {
+	width:100%;
+	position:absolute;
+	bottom:0;
+	height:60%;
+}
+/*FIGURE&HAIR*/
+.st0 {
+	fill:#4A3222;
+	stroke:#4A3222;
+	stroke-miterlimit:10;
+}
+ .st1 {
+ 	fill:#140A02;
+ }
+ .st2 {
+ 	fill:none;
+ 	stroke:#140A02;
+ 	stroke-miterlimit:10;
+ }
+  .st3 {
+  	fill:#4A3222;
+  	stroke:#F9D6B7;
+  	stroke-miterlimit:10;
+  }
+  .st4 {
+  	fill:#72594B;
+  	stroke:#72594B;
+  	stroke-miterlimit:10;
+  }
+  .st5 	{
+  	fill:#733D4E;
+  	stroke:#6B1232;
+  	stroke-miterlimit:10;
+  }
+  .st6	{
+  	fill:none;
+  	stroke:#6B1232;
+  	stroke-miterlimit:10;
+  }
+  .st7	{
+  	fill:#F9D6B7;
+  	stroke:#F9D6B7;
+  	stroke-miterlimit:10;
+  }
+  .st8	{
+  	fill:#DD653A;
+  	stroke:#DD653A;
+  	stroke-miterlimit:10;
+  }
+  .st9 { 
+  	fill:#07162B;
+  	stroke:#07162B;
+  	stroke-miterlimit:10;
+  }
+/*CLOTHES-TOPS*/
+.st13 {
+	fill:#D1EFF2;
+	stroke:#A0C5E0;
+	stroke-miterlimit:10;
+}
+ .st14 {
+ 	fill:#F7F6F5;
+ 	stroke:#A0C5E0;
+ 	stroke-miterlimit:10;
+ }
+ .st15 {
+ 	fill:#415277;
+ 	stroke:#415277;
+ 	stroke-miterlimit:10;
+ }
+ .st16 {
+ 	fill:#5C7B89;
+ 	stroke:#5C7B89;
+ 	stroke-miterlimit:10;
+}
+/*CLOTHES-PANTS*/
+  .st10	{	
+  	fill:#0F0701;
+  	stroke:#0F0701;
+  	stroke-miterlimit:10;
+  }
+  .st11	{	
+  	fill:#0B1019;
+  	stroke:#415277;
+  	stroke-miterlimit:10;
+  }
+  .st12	{	
+  	fill:#021116;
+  	stroke:#021116;
+  	stroke-miterlimit:10;
+  }
+/*MEDIA QUERIES*/
+@media screen and (min-width:320px) {
+	#svg {
+	}
+}
