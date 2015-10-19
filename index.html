@@ -34,6 +34,7 @@
         </div><!--/navbar-header-->
       </div><!-- /.container-fluid -->
     </nav>
+    <div class="wrapper">
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -43,9 +44,9 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner" id="carouselone" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="assets/images/girl1.png" alt="First slide">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active" id="carouseltwo">
+          <img class="first-slide img-responsive" src="assets/images/girl11.png" alt="First slide">
           <div class="container">
             <div class="carousel-caption" id="caption">
               <h1>What do you see in the mirror?</h1>
@@ -53,15 +54,15 @@
           </div><!--/container-->
         </div><!--/item active-->
         <div class="item" id="carouseltwo">
-          <img class="second-slide" src="assets/images/girl2.png" alt="Second slide">
+          <img class="second-slide img-responsive" src="assets/images/girl22.png" alt="Second slide">
           <div class="container">
             <div class="carousel-caption" id="caption">
               <h1>91% of women dislike what they see.</h1>
             </div><!--/carousel-caption-->
           </div><!--/container-->
         </div><!--/item-->
-        <div class="item">
-          <img class="third-slide" id="carouselthree"src="assets/images/boy.png" alt="Third slide">
+        <div class="item" id="carouselthree">
+          <img class="third-slide img-responsive" src="assets/images/boy11.png" alt="Third slide">
           <div class="container">
             <div class="carousel-caption" id="caption">
               <h1>Women's Health Action want to change this</h1>
@@ -81,7 +82,8 @@
   <!--MODALS===========================-->
 <!--=======WANT MORE INFO=======-->
 <div class="container" id="modalinfo">
-  <div class="col-sm-4">
+<div class="row" id="buttonmodal">
+  <div class="col-xs-12 col-sm-4">
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#more" id="wantmore">
     Want More Info?
     </button>
@@ -91,16 +93,42 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          <h4 class="modal-title" id="myModalLabel">Body Image: What's going on?</h4>
         </div>
         <div class="modal-body">
-          INFO
+          <h5>The Facts</h5>
+          <p>80% of 10 year old children are afraid of being "fat", and have dieted.</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+              <span class="sr-only">80%</span>
+            </div><!--/progress-bar-->
+          </div><!--/progress-->
+          <p>70% of girls feel like they don't measure up to their peers.</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+              <span class="sr-only">70%</span>
+            </div><!--/progress-bar-->
+          </div><!--/progress-->
+          <p>12% of teen boys are using steroids or supplements.</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%;">
+              <span class="sr-only">12%</span>
+            </div><!--/progress-bar-->
+          </div><!--/progress-->
+          <p>More than 90% of girls aged 15-17 wish to change their appearance.</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+              <span class="sr-only">90%</span>
+            </div><!--/progress-bar-->
+          </div><!--/progress-->
+          <h5>The Effects</h5>
+          <p>Obesity has risen by 300% in the last 30 years.<br>Meanwhile, other eating disorders are prevalent, with 13% of teenage girls having been affected by an eating disorder.</p>
         </div><!--/modal-body-->
       </div><!--/modal-content-->
     </div><!--/modal-dialog-->
   </div><!--/modal-fade-->
 <!--=====Need Help=====-->
-  <div class="col-sm-4">
+  <div class=" col-xs-12 col-sm-4">
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#help" id="needhelp">
     Need Help?
     </button>
@@ -110,16 +138,19 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          <h4 class="modal-title" id="myModalLabel">Who Can Help Me?</h4>
         </div>
         <div class="modal-body">
-          HOW CAN I GET HELP
+          <h5>If you know someone affected by an eating disorder:</h5>
+          <p><strong>EDANZ</strong><br>Eating Disorder Association New Zealand (EDANZ) was established by parents of people with eating disorders in New Zealand.  They offer support and some advice for parents and carers who may be caring for someone with an eating disorder or would like help and support.<br><br><strong>Phone:</strong> (09) 522-2679<br><strong>Email:</strong> info@ed.org.nz<br><strong>Web:</strong> <a href="http://www.ed.org.nz" target="blank" rel="external">www.ed.org.nz</a></p>
+          <h5>If you need counselling</h5>
+          <p>You can find a directory of registered counsellors in New Zealand<a href="http://www.nzac.org.nz/" target="blank" rel="external"> here.</a> Search by location, or for specific details.</p>
         </div><!--/modal-body-->
       </div><!--/modal-content-->
     </div><!--/modal-dialog-->
   </div><!--/modal-fade-->
 <!--=====Want to Help=====-->
-  <div class="col-sm-4">
+  <div class="col-xs-12 col-sm-4">
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#how" id="wanttohelp">
     Want to Help?
     </button>
@@ -129,15 +160,18 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          <h4 class="modal-title" id="myModalLabel">How Can I Get Involved?</h4>
         </div>
         <div class="modal-body">
-          HOW CAN I HELP
+          <h5>Women’s Health Action want to change things.</h5>
+          <p>We have specifically targeted programmes to change body image thinking in NZ. You can get involved as a leader, or you can donate <a href="http://www.womens-health.org.nz/programmes/body-image-programme/" traget="blank" rel="external">here.</a></p>
         </div><!--/modal-body-->
       </div><!--/modal-content-->
     </div><!--/modal-dialog-->
   </div><!--/modal-fade-->
+ </div><!--/row--> 
  </div><!--/container-->
+</div><!--/wrapper--> 
     <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
