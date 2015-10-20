@@ -1,24 +1,49 @@
 #header {
 	background:#71236b;
-	height:150px;
+	height:200px;
 	width:100%;
 	border:none;
   border-radius:0;
-
 }
 #header a img {
-	height:100px;
+	height:80px;
+}
+#headline {
+  margin:0 auto;
+  width:60%;
+}
+#navbarheader {
+  margin-left:-100px;
+  margin-right:0;
+}
+#banner {
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  height:50%;
 }
 .wrapper {
   width:88%;
   margin:0 auto;
+}
+#footer {
+  width:100%;
+  background:#71236b;
+  margin:0 auto;
+  position:absolute;
+  bottom:0;
+}
+#footer p {
+  text-align:center;
+  color:white;
 }
 /*CAROUSEL*/
 #myCarousel {
   margin:0 auto;
   position:relative;
 }
-#control {
+#controlone, #controltwo {
     background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 0%);
     background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 0%);
     background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0,0,0,0)));
@@ -27,15 +52,38 @@
 .carouselcontrol {
   width:25%;
 }
-#carouseltwo img {
+#carouseltwo img{
   margin:0 auto;
 }
 #carouselthree img {
   margin:0 auto;
 }
+#carouselone img{
+  margin:0 auto;
+}
+.carousel-caption {
+  padding-top:0;
+  width:60%;
+  text-shadow:0 0 0;
+  color:grey;
+}
+#captionone, #captionthree {
+  position:absolute;
+  left:20%;
+  top:10%;
+  margin:0 auto;
+  width:60%;
+}
+#captiontwo {
+  position:absolute;
+  left:17%;
+  top:10%;
+  margin:0 auto;
+  width:60%;
+}
 .carousel-caption h1 {
   color:white;
-  font-size:23px;
+  font-size:20px;
   font-weight:bold;
   font-family:'Open Sans', sans-serif;
 }
@@ -47,36 +95,38 @@
 .carousel-indicators .active {
   background:#71236b;
 }
-.carousel-caption {
-  top:40px;
-}
-/*TYPOGRAPHY*/
 /*BUTTONS*/
-#wantmore, #needhelp, #wanttohelp {
-  background:#00b1a9;
-  border-radius:0;
-  border:#00b1a9;
-  margin:1em 20% 0;
-  width:180px;
-}
-#wantmore h4, #needhelp h4, #wanttohelp h4 {
-    font-family:'Open Sans', sans-serif;
-}
 #donate {
   background:red;
   color:white;
-  border-radius:0;
+  border-radius:2px;
   border:none;
   margin-top:3em;
   position:absolute;
-  right:15%;
+  right:10%;
+  font-family:'Open Sans', sans-serif;
+}
+#modalbuttons {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  justify-content:space-between;
+  padding-top:2em;
+  margin:0 auto;
+  max-width:75%;
+}
+#wantmore, #needhelp, #wanttohelp {
+  background:#00b1a9;
+  border-radius:2px;
+  border:#00b1a9;
+  flex-grow:1;
+  padding:15px 20px;
+  width:170px;
+  margin:1em;
+  font-family:'Open Sans', sans-serif;
 }
 /*MODALS*/
-#buttonmodal {
-  width:80%;
-  margin:0 auto;
-}
-h4 {
+#how h4, #help h4, #more h4 {
   font-family: "Open Sans", sans-serif;
   color:#00b1a9;
   font-weight:600;
@@ -84,7 +134,7 @@ h4 {
   margin:0 auto;
   max-width:88%;
 }
-h5 {
+#how h5, #help h5, #more h5 {
   color:#71236b;
   font-size:18px;
   padding-top:10px;
@@ -93,10 +143,10 @@ h5 {
   margin:0 auto;
   max-width:88%;
 }
-p {
+#how p, #help p, #more p {
   font-size:16px;
   line-height:25px;
-  padding-bottom:2em;
+  padding-bottom:1em;
   max-width:88%;
   margin:0 auto;
 }
@@ -110,23 +160,70 @@ p {
   margin:0 auto;
   width:88%;
 }
+#progress1, #progress2, #progress3, #progress4 {
+  margin-bottom:3em;
+}
 /*MEDIA QUERIES*/
-@media screen and (min-width:1200px) {
-  .carousel-control {
-    width:20%;
+@media screen and (min-width:500px) {
+  .carousel-caption h1 {
+    font-size:30px;
+  }
+  #captiontwo {
+    width:50%;
+  }
+  #modalbuttons {
+    flex-direction:row;
   }
 } 
+@media screen and (min-width:600px) {
+   #captionone, #captiontwo, #captionthree {
+    top:30%;
+    width:50%;
+  }
+}
+@media screen and (min-width:768px) {
+  #navbarheader {
+    margin-left:0;
+  }
+}
+@media screen and (min-width:800px) {
+  #navbarheader {
+    margin-left:-50px;
+  }
+}
+@media screen and (min-width:960px) {
+  #navbarheader {
+    margin-left:0;
+  }
+}
 @media screen and (min-width:1200px) {
   #myCarousel {
     width:88%;
-}
- .carousel-control {
-  width:25%;
- }
+  }
+  .carousel-control {
+    width:30%;
+  }
+  #donate {
+    right:17%;
+  }
+  #navbarheader {
+    margin-left:100px;
+  }
 }
 
-@media screen and (min-width:1800px) {
+@media screen and (min-width:1400px) {
+  .carousel-control {
+    width:40%;
+  }
+  #donate {
+    right:25%;
+  }
+}
+@media screen and (min-width:1700px) {
   .carousel-control {
     width:50%;
+  }
+  #donate {
+    right:27%;
   }
 }
