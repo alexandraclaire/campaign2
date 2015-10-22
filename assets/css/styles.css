@@ -36,14 +36,20 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height:25vh;
-  margin-top:5em;
+  margin-top:10em;
   border-top:lightgrey solid 10px;
 }
-#footer p {
+.footercontent p {
   text-align:center;
   color:white;
-  font-size:10px;
+  font-size:14px;
+  padding:1em 1em 0 1em;
+  margin-left:2em;
+  margin-right:2em;
+  line-height:25px;
+  text-align:left;
+  letter-spacing:1px;
+
 }
 /*CAROUSEL*/
 #myCarousel {
@@ -58,6 +64,7 @@ footer {
 }
 .carouselcontrol {
   width:25%;
+  margin-top:200px;
 }
 #carouseltwo img{
   margin:0 auto;
@@ -152,7 +159,7 @@ footer {
   color:#71236b;
   font-size:18px;
   padding-top:10px;
-  padding-bottom:10px;
+  padding-bottom:12px;
   line-height:18px;
   margin:0 auto;
   max-width:88%;
@@ -176,6 +183,9 @@ footer {
 }
 #progress1, #progress2, #progress3, #progress4 {
   margin-bottom:3em;
+}
+#graph1, #graph2. #graph3, #graph4 {
+  width:0;
 }
 /*MEDIA QUERIES*/
 @media screen and (min-width:500px) {
@@ -251,6 +261,9 @@ footer {
   }
   #donate {
     right:25%;
+  }
+  footer {
+      height:30vh;
   }
 }
 @media screen and (min-width:1700px) {

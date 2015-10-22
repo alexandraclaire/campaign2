@@ -1,31 +1,13 @@
-	var Animation = function() {
-		$(".items:eq(0)").delay(1000).animate({
-			opacity:1
-		}, "slow", function(){
-			$(this).find("p").css("background-color", "#B5C3D5");
-		});
-		$(".items:eq(1)").delay(2000).animate({
-			opacity:1
-		}, "slow", function(){
-			$(this).find("p").css("background-color", "#B5C3D5");
-		});
-		$(".items:eq(2)").delay(3000).animate({
-			opacity:1
-		}, "slow", function(){
-			$(this).find("p").css("background-color", "#B5C3D5");
-		});
-		$(".items:eq(3)").delay(4000).animate({
-			opacity:1
-		}, "slow", function(){
-			$(this).find("p").css("background-color", "#B5C3D5");
-		});
-		$(".items:eq(4)").delay(4000).animate({
-			opacity:1
-		}, "slow", function(){
-			$(this).find("p").css("background-color", "#B5C3D5");
-		});
+$(document).ready(function() {
 
-		$("#wantmore").click(){
-			thirdAnimation();
-		};	
-	};
+	$("#wantmore").click(function() {
+		$("#graph1").delay(400).animate({
+			width:'80%'}, 1000);
+		$("#graph2").delay(1000).animate({
+			width:'70%'}, 1000);
+		$("#graph3").delay(2000).animate({
+			width:'12%'}, 1000);
+		$("#graph4").delay(2500).animate({
+			width:'90%'}, 1000);
+	});
+});
